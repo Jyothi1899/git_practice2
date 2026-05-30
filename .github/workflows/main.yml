@@ -7,5 +7,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Message
-        run: echo "Hello GitHub Actions"
+      - name: Greetings
+        run: |
+          echo "Hello Sai"
+          echo "Learning GitHub Actions"
+          echo "This is my first workflow"
+
+      - name: Show Date
+        run: date
+
+      - name: Show Directory
+        run: pwd
