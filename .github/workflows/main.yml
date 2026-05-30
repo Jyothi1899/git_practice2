@@ -1,12 +1,13 @@
-name: Devops practice
-on: push
 jobs:
-   basics:
-       runs-on: ubuntu-latest
+  basics:
+    runs-on: ubuntu-latest
+
     steps:
-       -name: welcome
-       run: echo "welcome to devops"
-        -name: Date
-       run: date
-        name: git version
-       run: git --version
+      - name: welcome
+        run: echo "welcome to devops"
+
+      - name: Date
+        run: date
+
+      - name: git version
+        run: git --version
