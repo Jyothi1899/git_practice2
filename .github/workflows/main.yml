@@ -1,3 +1,7 @@
+name: Devops practice
+
+on: push
+
 jobs:
   basics:
     runs-on: ubuntu-latest
