@@ -1,20 +1,12 @@
-name: My First Workflow
-
+name: Devops practice
 on: push
-
 jobs:
-  hello:
-    runs-on: ubuntu-latest
-
+   basics:
+       runs-on: ubuntu-latest
     steps:
-      - name: Greetings
-        run: |
-          echo "Hello Sai"
-          echo "Learning GitHub Actions"
-          echo "This is my first workflow"
-
-      - name: Show Date
-        run: date
-
-      - name: Show Directory
-        run: pwd
+       -name: welcome
+       run: echo "welcome to devops"
+        -name: Date
+       run: date
+        name: git version
+       run: git --version
