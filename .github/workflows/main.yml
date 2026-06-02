@@ -1,17 +1,18 @@
-name: Devops practice
+name: Multi Job Workflow
 
 on: push
 
 jobs:
-  basics:
+  greeting:
     runs-on: ubuntu-latest
 
     steps:
-      - name: welcome
-        run: echo "welcome to devops"
+      - name: Welcome
+        run: echo "Hello Sai"
 
-      - name: Date
+  systeminfo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Date
         run: date
-
-      - name: git version
-        run: git --version
